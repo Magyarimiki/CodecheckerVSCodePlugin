@@ -16,8 +16,8 @@ export async function activate(context: vscode.ExtensionContext): Promise<CodeCh
     if (await checkWorkspace()) {
         ExtensionApi.init(context);
         Editor.init(context);
-        SidebarContainer.init(context);
     }
+    SidebarContainer.init(context);
 
     console.log('Extension "codechecker" activated');
 
